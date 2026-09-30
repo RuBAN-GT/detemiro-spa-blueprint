@@ -35,7 +35,14 @@ jobs:
           fs.writeFileSync(rootPath,JSON.stringify(root,null,2)+'\n');
           fs.writeFileSync(appPath,JSON.stringify(app,null,2)+'\n');
           NODE
-      - run: yarn install
+      - name: Install dependencies
+        run: |
+          if ! yarn install > /tmp/blueprint-install.log 2>&1; then
+            printf '::error title=Yarn error codes::'
+            grep -oE 'YN[0-9]{4}' /tmp/blueprint-install.log | sort -u | tr '\n' ',' || true
+            printf '\n'
+            exit 1
+          fi
       - run: node ../../node_modules/.bin/modern deploy
         working-directory: apps/general
       - run: node ../../node_modules/typescript/bin/tsc --noEmit --project tsconfig.json
