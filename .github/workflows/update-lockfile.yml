@@ -37,7 +37,7 @@ jobs:
           NODE
       - name: Install dependencies
         run: |
-          if ! yarn install > /tmp/blueprint-install.log 2>&1; then
+          if ! YARN_ENABLE_IMMUTABLE_INSTALLS=false yarn install > /tmp/blueprint-install.log 2>&1; then
             printf '::error title=Yarn error codes::'
             grep -oE 'YN[0-9]{4}' /tmp/blueprint-install.log | sort -u | tr '\n' ',' || true
             printf '\n'
