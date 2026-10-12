@@ -13,11 +13,12 @@ COPY .yarn /workspace/.yarn
 COPY package.json /workspace/
 
 # Monorepo
-COPY apps/general /workspace/apps/general
+COPY apps/general/package.json /workspace/apps/general/package.json
 
 # Build
 RUN corepack enable
-RUN yarn install
+RUN yarn install --immutable
+COPY apps/general /workspace/apps/general
 RUN yarn build
 
 ###################################################################
@@ -29,10 +30,9 @@ ENV NODE_ENV=production
 WORKDIR /app
 
 # Copy artifacts
-COPY --from=builder /workspace/apps/general/.output ./app/apps/general/.output
-RUN cd ./app/apps/general/.output
-RUN yarn install
+# Modern.js deploy includes the production dependencies in .output/node_modules.
+COPY --from=builder /workspace/apps/general/.output ./
 
 # Do it!
 EXPOSE 8080
-CMD ["node", "./app/apps/general/.output/index"]
+CMD ["node", "index.js"]

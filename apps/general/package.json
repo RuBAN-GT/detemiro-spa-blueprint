@@ -11,31 +11,35 @@
     "start:serve": "modern serve",
     "start:prod": "node .output/index",
     "build": "modern deploy",
+    "typecheck": "tsc --noEmit",
     "modern:new": "modern new",
     "modern:upgrade": "modern upgrade",
     "lint": "eslint \"{src,apps,libs,test}/**/*.{ts,tsx}\"",
     "lint:fix": "eslint \"{src,apps,libs,test}/**/*.{ts,tsx}\" --fix"
   },
   "dependencies": {
-    "@modern-js/bff-core": "^3.2.2",
-    "@modern-js/plugin-bff": "^3.2.2",
-    "@modern-js/runtime": "^3.2.2",
-    "@modern-js/server-runtime": "^3.2.2",
+    "@modern-js/bff-core": "^3.9.3",
+    "@modern-js/plugin-bff": "^3.9.3",
+    "@modern-js/runtime": "^3.9.3",
+    "@modern-js/server-runtime": "^3.9.3",
     "@swc/helpers": "^0.5.23",
     "detemiro-logger": "^2.5.0",
     "detemiro-logger-browser": "^2.5.0",
     "detemiro-logger-node": "^2.5.0",
-    "i18next": "^26.2.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "react-i18next": "^17.0.8"
+    "i18next": "^26.4.4",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "react-i18next": "^17.0.16"
   },
   "devDependencies": {
-    "@modern-js/app-tools": "3.2.2",
-    "@modern-js/tsconfig": "3.2.2",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "~19.2.3",
-    "eslint": "^9.39.4",
+    "@modern-js/app-tools": "3.9.3",
+    "@modern-js/tsconfig": "3.9.3",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "~19.3.0",
+    "eslint": "^9.39.5",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "~5.9.3"
   }
 }
