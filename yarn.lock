@@ -328,6 +328,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@colors/colors@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "@colors/colors@npm:1.6.1"
+  checksum: 10/4970c737ff30ad13460a347b0286416e83d04638f77353adae128fbda1bd33612331701a37cbf815916c3d659f2106fe611d19521ad786b6d2ac9194241a4525
+  languageName: node
+  linkType: hard
+
 "@commitlint/cli@npm:18.6.1":
   version: 18.6.1
   resolution: "@commitlint/cli@npm:18.6.1"
@@ -4401,32 +4408,32 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detemiro-logger-browser@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "detemiro-logger-browser@npm:2.5.0"
+"detemiro-logger-browser@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "detemiro-logger-browser@npm:2.5.1"
   peerDependencies:
     detemiro-logger: ^2.5.0
-  checksum: 10/e874dadf85c7459ae9e3a2f3c7404440ad18f04a0bb1c2112f9906f8cb36acc3e6a5222b2141183b8417090074d1223cf7a83cdebe37147d5ab2f212617aed31
+  checksum: 10/edea0e2c43de3714f9536daf8f08c8ca3f2e569fa8dd38224f1f0af258d5e89eb33ad96ab1628129d52abc5c64d924bd558c48ef58a46b7ba123e975643b7091
   languageName: node
   linkType: hard
 
-"detemiro-logger-node@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "detemiro-logger-node@npm:2.5.0"
+"detemiro-logger-node@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "detemiro-logger-node@npm:2.5.1"
   dependencies:
-    "@colors/colors": "npm:^1.6.0"
+    "@colors/colors": "npm:^1.6.1"
     logform: "npm:^2.7.0"
     winston: "npm:^3.19.0"
   peerDependencies:
     detemiro-logger: ^2.5.0
-  checksum: 10/66fccaa4a8604e51343aea6cc169e58460c513793cebec16fd07a7115393b735224359266adbed1a92e5264b9310e0d1b2d290f503a6202777ef5b831e312f48
+  checksum: 10/9fc9a885c752c63d9bd1e4395f87f10e6f10a2ffe68e0adc1c8b8e86e92e1219f9d93251e6856440ec5aca58e8b1201627c442c631421f11340ae42d6c97cdb6
   languageName: node
   linkType: hard
 
-"detemiro-logger@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "detemiro-logger@npm:2.5.0"
-  checksum: 10/2a92553333fd38547bc982c63c86eed31c3a72ccc6c7bcc16b7bea6037a9d410684cdb12c62275a34bca7e1cdcb595017c90da2fb905f62e991a67f74917bc9d
+"detemiro-logger@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "detemiro-logger@npm:2.5.1"
+  checksum: 10/f527c9805dbab649b8c006a4c704265fc53e78b438320581ed08c07997bcb2d0688d37850a0b6db89fc55d4bd5a4567c919a932c340afa3bfa7b070cc93ce6c4
   languageName: node
   linkType: hard
 
@@ -4444,9 +4451,9 @@ __metadata:
     "@types/node": "npm:^22.20.5"
     "@types/react": "npm:^19.3.0"
     "@types/react-dom": "npm:~19.3.0"
-    detemiro-logger: "npm:^2.5.0"
-    detemiro-logger-browser: "npm:^2.5.0"
-    detemiro-logger-node: "npm:^2.5.0"
+    detemiro-logger: "npm:^2.5.1"
+    detemiro-logger-browser: "npm:^2.5.1"
+    detemiro-logger-node: "npm:^2.5.1"
     eslint: "npm:^9.39.5"
     i18next: "npm:^26.4.4"
     react: "npm:^19.3.0"
@@ -4470,7 +4477,7 @@ __metadata:
     "@types/node": "npm:^22.20.5"
     commitlint-plugin-regex-match: "npm:^1.2.4"
     eslint: "npm:^9.39.5"
-    eslint-config-detemiro: "npm:^2.1.0"
+    eslint-config-detemiro: "npm:^2.1.1"
     eslint-config-prettier: "npm:^9.1.2"
     eslint-plugin-import: "npm:^2.32.0"
     eslint-plugin-prettier: "npm:^5.5.6"
@@ -4875,9 +4882,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-detemiro@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "eslint-config-detemiro@npm:2.1.0"
+"eslint-config-detemiro@npm:^2.1.1":
+  version: 2.1.1
+  resolution: "eslint-config-detemiro@npm:2.1.1"
   peerDependencies:
     "@eslint/js": ">= 9.0.0"
     eslint: ">= 9.0.0"
@@ -4890,7 +4897,7 @@ __metadata:
     prettier: ">= 3.0.0"
     typescript: ">= 4.0.0"
     typescript-eslint: ">= 8.0.0"
-  checksum: 10/2dca55c3b7e539ac0bfa0f852898f2349c6fbade37896e822c524b0431ce6e548648dd44026d0c98fa2b8b3343d2252d941b17a2dfc8773e0f76874d0f602360
+  checksum: 10/b617bf702bbbf83cebf83aca3eac8fc9318af4dc51d968c87d74850efd59172fb34390e26cd942a145e0ea517717608d10bbf8e3a51dca217f3d5ea0fd294299
   languageName: node
   linkType: hard
 

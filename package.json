@@ -36,7 +36,7 @@
     "@types/node": "^22.20.5",
     "commitlint-plugin-regex-match": "^1.2.4",
     "eslint": "^9.39.5",
-    "eslint-config-detemiro": "^2.1.0",
+    "eslint-config-detemiro": "^2.1.1",
     "eslint-config-prettier": "^9.1.2",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.6",
